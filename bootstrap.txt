@@ -4,7 +4,7 @@ apt-get install apache2 -y
 update-rc.d apache2 enable 
 apt-get install python-pip -y
 apt-get install git -y
-pip install Flask -y
+pip install Flask 
 apt-get install ansible -y
 git clone https://github.com/nickholbrook/ToInfinyAndBeyond-server.git /var/www/flask/
 cd /var/www/flask/
