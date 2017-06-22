@@ -4,3 +4,4 @@ apt-get install apache2 -y
 update-rc.d apache2 enable 
 apt-get install python-pip -y
 pip install Flask
+apt-get install ansible
