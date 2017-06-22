@@ -1,0 +1,19 @@
+#!/bin/bash
+apt-get update -y
+apt-get install apache2 -y
+update-rc.d apache2 enable 
+apt-get install python-pip -y
+apt-get install git -y
+pip install Flask
+<<<<<<< HEAD
+apt-get install ansible -y
+git clone https://github.com/nickholbrook/ToInfinyAndBeyond-server.git /var/www/flask
+cd /var/www/flask/
+=======
+apt-get install ansible
+git clone https://github.com/nickholbrook/ToInfinyAndBeyond-server.git /var/www/flask
+cd /var/www/flask
+>>>>>>> cb651d0bc502bc5fa33436b8b643afa3d17d9dd4
+export FLASK_APP=hello.py
+/usr/local/bin/flask run --host 0.0.0.0
+
