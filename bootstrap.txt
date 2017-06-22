@@ -6,8 +6,7 @@ apt-get install python-pip -y
 apt-get install git
 pip install Flask
 apt-get install ansible
-mkdir /var/www/flask/
-cd /var/www/flask/
-git clone https://github.com/nickholbrook/ToInfinyAndBeyond-server.git
+git clone https://github.com/nickholbrook/ToInfinyAndBeyond-server.git /var/www/flask
+cd /var/www/flask
 export FLASK_APP=hello.py
 flask run --host 0.0.0.0
